@@ -13,18 +13,18 @@ class Card extends React.Component {
   }
   render() {
   	return(
-        <div class="container">
-            <div class="row text-center">       
+        <div className="container">
+            <div className="row text-center">       
 
                 {this.state.items.length ?
                     this.state.items
                         .map(item=>
-                            <div class="col-8 col-sm-4" style={{display:"flex", flexWrap: "wrap"}}>
+                            <div className="col-8 col-sm-4" style={{display:"flex", flexWrap: "wrap"}}>
                                 
-                                    <div class="card mb-3">
-                                        <img class="card-img-top" src={item.url} alt={item.title}/>
-                                        <div class="card-body" key={item.id}>
-                                            <h4 class="card-title">{item.title}</h4>
+                                    <div className="card mb-3">
+                                        <img className="card-img-top" src={item.url} alt={item.title}/>
+                                        <div className="card-body" key={item.id}>
+                                            <h4 className="card-title">{item.title}</h4>
                                         </div>
                                     </div>  
                                 
